@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloheader.css">
+    <link rel="stylesheet" href="css/estilogeral.css">
+    <link rel="stylesheet" href="css/estilohome.css">
+    <script src="js/jshome.js" type="text/javascript"></script>
+    <title>PigBurguer</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="navi">
+            <ul class="menu">
+                <li><a href="">CARDÁPIO</a></li>
+                <li><a href=""><img src="imagens/Logo.png" alt="Logo" class="logo"></a></li>
+                <li><a href="">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="carrossel">
+        <img class="imagem" src="imagens/imagem1.jpg" alt="Imagem 1">
+        <img class="imagem" src="imagens/imagem2.jpg" alt="Imagem 2">
+        <img class="imagem" src="imagens/imagem3.jpg" alt="Imagem 3">
+        <div class="seta seta-esquerda" onclick="mudarImagem(-1)">&#10094;</div>
+        <div class="seta seta-direita" onclick="mudarImagem(1)">&#10095;</div>
+    </div>
+    <div class="alt_cont">
+        <li><button onclick="slide('next')">Novidades</button></li>
+        <li><button onclick="slide('prev')">Promoções</button></li>
+    </div>
+    <div class="container">
+        <div class="cont">
+            <div class="page one">
+            
+            </div>
+            <div class="page two">
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
