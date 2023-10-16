@@ -1,0 +1,65 @@
+.allcardapio {
+    height: 100vh;
+}
+.areacardapio_botoes {
+    margin-top: 5vh;
+    position: relative;
+    height: 75px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    text-align: center;
+}
+.areacardapio_botoes button {
+    border: none;
+    background-color: transparent;
+    font-family: BebasNeue;
+    font-size: 18px;
+    color: #3f1a14;
+    width: 250px;
+    height: 50px;
+}
+.areacardapio_botoes button:hover {
+    background-color: #3f1a14;
+    color: white;
+    border-radius: 10px;
+}
+.areacardapio_produtos {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.areacardapio_todos {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    box-sizing: border-box;
+    transform: none;
+    transition: all 0.7s;
+    flex-direction: line;
+}
+.cardapio {
+    margin-bottom: 50px;
+    height: 75%;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
+.cardapiohbg {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50px;  
+}
+.cardapiobbd {
+    background-color: blue;
+}
+.cardapiosbm {
+    background-color: blueviolet;
+}
+.cardapiocmb {
+    background-color: yellow;
+}
