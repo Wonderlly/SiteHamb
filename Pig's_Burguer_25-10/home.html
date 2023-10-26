@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilohome.css">
+    <!--<link rel="stylesheet" href="css/estilomobile.css">-->
+    <title>PigBurguer</title>
+</head>
+<body>
+    <log-component></log-component>
+    <!-- HEADER JS >>> js/cabecalho.js -->
+    <header-component></header-component>
+    <div class="area_carrossel">
+        <div class="carrossel">
+            <div class="conteudo_carrossel">
+                <img class="imagem" src="imagens/carrossel1.png" alt="Imagem 1">
+                <img class="imagem" src="imagens/carrossel2.png" alt="Imagem 2">
+                <img class="imagem" src="imagens/carrossel3.png" alt="Imagem 3">
+            </div>
+            <button class="seta seta-esquerda" onclick="mudarImagem(-1)">&#10094;</button>
+            <button class="seta seta-direita" onclick="mudarImagem(1)">&#10095;</button>
+        </div>
+    </div>
+    <div class="area_botoes">
+        <button class="btn1"><h2>Novidades</h2></button>
+        <button class="btn2"><h2>Promoções</h2></button>
+    </div>
+    <div class="area_conteudo">
+        <div class="cont">
+            <div class="page one">
+                <section class="conteudo novidades">
+                    <h1>Novidades</h1>
+                    <section class="linha 1">
+                        <section class="item 1">
+                            <img src="imagens/imagemitem.png"  class="img_item 1">
+                            <p>Item Teste 1</p>
+                        </section>
+                        <section class="item 2">
+                            <img src="imagens/imagemitem.png"  class="img_item 1">
+                            <p>Item Teste 2</p>
+                        </section>
+                    </section>
+                    <section class="linha 2">
+                        <section class="item 3">
+                            <img src="imagens/imagemitem.png"  class="img_item 1">
+                            <p>Item Teste 3</p>
+                        </section>
+                        <section class="item 4">
+                            <img src="imagens/imagemitem.png"  class="img_item 1">
+                            <p>Item Teste 4</p>
+                        </section>
+                    </section>
+                    <section class="linha 3">
+                        <section class="item 5">
+                            <img src="imagens/imagemitem.png"  class="img_item 1">
+                            <p>Item Teste 5</p>
+                        </section>
+                        <section class="item 6">
+                            <img src="imagens/imagemitem.png"  class="img_item 1">
+                            <p>Item Teste 6</p>
+                        </section>
+                    </section>
+                </section>
+            </div>
+            <div class="page two">
+                <section class="conteudo promocoes">
+                    <h1>Promoções</h1>
+                    <section class="linha 1">
+                        <section class="item 7">
+                            <img src="imagens/imagemitem.png"  class="img_item 1">
+                            <p>Item Teste 7</p>
+                        </section>
+                        <section class="item 8">
+                            <img src="imagens/imagemitem.png"  class="img_item 1">
+                            <p>Item Teste 8</p>
+                        </section>
+                    </section>
+                    <section class="linha 2">
+                        <section class="item 9">
+                            <img src="imagens/imagemitem.png"  class="img_item 1">
+                            <p>Item Teste 9</p>
+                        </section>
+                        <section class="item 10">
+                            <img src="imagens/imagemitem.png"  class="img_item 1">
+                            <p>Item Teste 10</p>
+                        </section>
+                    </section>
+                    <section class="linha 3">
+                        <section class="item 11">
+                            <img src="imagens/imagemitem.png"  class="img_item 1">
+                            <p>Item Teste 11</p>
+                        </section>
+                        <section class="item 12">
+                            <img src="imagens/imagemitem.png"  class="img_item 1">
+                            <p>Item Teste 12</p>
+                        </section>
+                    </section>
+               </section>
+            </div>
+        </div>
+    </div>
+    <footer-component></footer-component>
+    <script src="js/home.js"></script>
+    <script src="js/allpages.js"></script>
+</body>
+</html>
