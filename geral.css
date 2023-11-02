@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#carta{
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+#jogador{
+    font-size: 40px;
+    position: absolute;
+    margin-top: 40px;
+    z-index: 2;
+}
+#fundo{
+    position: absolute;
+    background-size: cover;
+    width: 450px;
+    z-index: 0;
+}
+#borda{
+    position: absolute;
+    background-size: cover;
+    width: 450px;
+    z-index: 1;
+}
+
