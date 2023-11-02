@@ -37,12 +37,16 @@ function mudarImagem(direction) {
 const btn1 = document.querySelector(".btn1");
 const btn2 = document.querySelector(".btn2");
 const page = document.querySelector(".cont");
+const pagemobile = document.querySelector(".cont-mobile");
 
 btn1.addEventListener("click", () => {
   page.style.transform = "translateX(0%)";
+//  pagemobile.style.transform = "translateX(0%)";
 });
 btn2.addEventListener("click", () => {
   page.style.transform = "translateX(-50%)";
-
+//  pagemobile.style.transform = "translateX(-100%)";
 });
+
+
 //Fim Área Conteúdo

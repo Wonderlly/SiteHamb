@@ -16,12 +16,12 @@ customElements.define('log-component', Log);
 class Header extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
-    <link rel="icon" href="imagens/logotexto.png">
+
     <link rel="stylesheet" href="css/estilogeral.css">
-    <header class="cabecalho">
-          <a class="texto" href="cardapio.html">CARDÁPIO</a>
+    <header class="cabecalho-mobile cabecalho">
+          <a class="texto cardapio" href="cardapio.html">CARDÁPIO</a>
           <a href="home.html"><img src="imagens/logotexto.png" alt="Logo" class="logo"></a>
-          <a class="texto" href="contato.html">CONTATO</a>
+          <a class="texto contato" href="contato.html">CONTATO</a>
     </header>
       `;
     }
@@ -34,7 +34,7 @@ class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <footer>
-    <h1>Footer Teste</h1>
+    <h1>Pig's Burguer™</h1>
     </footer>
     `;
   }
