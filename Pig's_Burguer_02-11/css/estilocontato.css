@@ -1,13 +1,37 @@
 .area_contato {
-    margin-top: 10vh;
-    height: 250vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     display: flex;
 }
-.areacontato {
-    height: 200vh;
+
+/*TEXTO*/
+p {
+    margin: 5vh;
+    text-align: justify;
+    font-family: Oswald;
+    font-size: 20px;
+}
+li{
+    font-family: Oswald;
+    font-size: 20px;
+}
+h1 {
+    font-family: Oswald;
+    font-size: 40px;
+    color: #3f1a14;
+    margin-top: 10px;
+}
+
+/*SOBRE*/
+.porcosobre {
+    margin-right: 10vh;
+    width: 35vh;
+}
+
+/*TELEFONE*/
+.areacontatoTELEFONE {
+    height: 359px;
     width: 150vh;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
@@ -19,27 +43,9 @@
     align-items: center;
     flex-direction: column;
 }
-.areacontato p {
-    margin: 5vh;
-    text-align: justify;
-}
-.areacontato h1 {
-    font-family: BebasNeue;
-    font-size: 25px;
-    color: #3f1a14;
-    margin-top: 5vh;
-}
-.porcosobre {
-    margin-right: 10vh;
-    width: 35vh;
-}
 .porcofone {
     margin-left: 10vh;
     width: 52vh;
-}
-.porcomapa {
-    margin-right: 10vh;
-    width: 50vh;
 }
 .fonelist {
     margin: 5vh;
@@ -53,72 +59,94 @@
     align-items: center;
     justify-content: center;
 }
-.onde {
- margin-bottom: 10vh;
+
+/*MAPA*/
+.areacontatoMAPA {
+    height: 455px;
+    width: 150vh;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
+}
+.porcomapa {
+    margin-right: 10vh;
+    width: 50vh;
 }
 .areamapa {
-    height: 40vh;
+    height: 280px;
+    width: 480px;
     margin: 5vh;
-    margin-top: 2vh;
     border: 2px solid #3f1a14;
     border-radius: 5vh;
-
 }
 .map {
     width: 100%;
     border-radius: 5vh;
     height: 100%;
 }
-
-/*ESTILO MOBILE CONTATO*/
-@media (max-width: 912px){
-    .area_contato {
-    margin-top: 10vh;
-    height: 120vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.ajusteMOBILE{
+    display: none;
 }
-    .areacontato {
+
+@media (max-width: 912px) {
+    .area_contato {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    /*TEXTO*/
+    p {
+        margin: 1vh;
+        text-align: center;
+        font-family: Oswald;
+        font-size: 14px;
+
+    }
+    li{
+        font-family: Oswald;
+        font-size: 10px;
+        text-align: center;
+    }
+    h1 {
+        font-family: Oswald;
+        font-size: 20px;
+        color: #3f1a14;
+        margin-top: 10px;
+    }
+    
+    /*SOBRE*/
+    .porcosobre {
+        margin-right: 10vh;
+        width: 35vh;
+    }
+    
+    /*TELEFONE*/
+    .areacontatoTELEFONE {
         height: 300px;
-        width: 100%;
+        width: 360px;
         border: 1px solid rgba(0, 0, 0, 0.2);
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
         border-radius: 5vh;
-        margin-top: 0vh;
+        margin-top: 5vh;
         margin-bottom: 5vh;
         display: flex;
         /*justify-content: center;*/
         align-items: center;
         flex-direction: column;
     }
-    .areacontato p {
-        margin: 5vh;
-        font-size: 10px;
-        font-weight: 1000;
-        text-align: justify;
-    }
-    .areacontato h1 {
-        font-family: BebasNeue;
-        font-size: 25px;
-        color: #3f1a14;
-        margin-top: 5vh;
-    }
-    .areacontato{
-        font-weight: 1000;
-    }
-    .porcosobre {
-        margin-right: 10vh;
-        width: 100px;
-    }
     .porcofone {
-        margin-left: 10vh;
+        margin-right: 300px;
+        margin-top: 190px;
         width: 100px;
-    }
-    .porcomapa {
-        margin-right: 10vh;
-        width: 100px;
+        position: absolute;
     }
     .fonelist {
         margin: 5vh;
@@ -132,20 +160,42 @@
         align-items: center;
         justify-content: center;
     }
-    .onde {
-    margin-bottom: 10vh;
+    
+    /*MAPA*/
+    .areacontatoMAPA {
+        height: 400px;
+        width: 300px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 5vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        display: flex;
+        /*justify-content: center;*/
+        align-items: center;
+        flex-direction: column;
+    }
+    .porcomapa {
+        margin-bottom: 300px;
+        margin-left: 200px;
+        margin-right: 0vh;
+        width: 70px;
+        position: absolute;
     }
     .areamapa {
-        height: 40vh;
+        height: 300px;
+        width: 270px;
         margin: 5vh;
-        margin-top: 2vh;
         border: 2px solid #3f1a14;
         border-radius: 5vh;
-
     }
     .map {
         width: 100%;
         border-radius: 5vh;
         height: 100%;
+    }
+    .ajusteMOBILE{
+        display: initial;
+        position: absolute;
     }
 }
