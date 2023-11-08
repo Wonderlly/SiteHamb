@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilohome.css">
+    <link rel="stylesheet" href="css/estilomobile.css">
+    <link rel="icon" href="imagens/icon.png" type="image/x-icon">
+    <title>PigBurguer</title>
+</head>
+<body>
+    <log-component></log-component>
+    <header-component></header-component>
+    <div class="area_carrossel">
+        <div class="carrossel">
+            <div class="conteudo_carrossel">
+                <img class="imagem" src="imagens/carrossel/tresporquinhos.png" alt="imagem 1">
+                <img class="imagem" src="imagens/carrossel/fazendinha.png" alt="imagem 2">
+                <img class="imagem" src="imagens/carrossel/tradicional.png" alt="imagem 3">
+                <img class="imagem" src="imagens/carrossel/familia.png" alt="imagem 4">
+                <img class="imagem" src="imagens/carrossel/sundaes.png" alt="imagem 5">
+            </div>
+            <button class="seta seta-esquerda" onclick="mudarImagem(-1)">&#10094;</button>
+            <button class="seta seta-direita" onclick="mudarImagem(1)">&#10095;</button>
+        </div>
+    </div>
+    <div class="area_botoes">
+        <button class="btn1"><h2>Novidades</h2></button>
+        <button class="btn2"><h2>Promoções</h2></button>
+    </div>
+    <div class="area_conteudo">
+        <div class="cont-mobile cont">
+            <div class="page one">
+                <section class="conteudo novidades">
+                    <h1>Novidades</h1>
+                    <section class="linha 1">
+                        <section class="item 1"><a href="cardapio.html">
+                            <img src="imagens/produtos/pigsalad.png"  class="img_item 1">
+                            <p>Novo Pig Salad</p></a>
+                        </section>
+                        <section class="item 2"><a href="cardapio.html">
+                            <img src="imagens/produtos/pigvegan.png"  class="img_item 1">
+                            <p>Novo Pig Vegan</p></a>
+                        </section>
+                    </section>
+                    <section class="linha 2">
+                        <section class="item 1"><a href="cardapio.html">
+                            <img src="imagens/produtos/combofazendinha.png"  class="img_item 1">
+                            <p>Novo Combo Fazendinha</p></a>
+                        </section>
+                        <section class="item 3"><a href="cardapio.html">
+                            <img src="imagens/produtos/novassbm.png"  class="img_item 1">
+                            <p>Novas Pig Sobremesas</p></a>
+                        </section>
+                    </section>
+                </section>
+            </div>
+            <div class="page two">
+                <section class="conteudo promocoes">
+                    <h1>Promoções</h1>
+                    <section class="linha 1">
+                        <section id="openModal1" class="item 7">
+                            <img src="imagens/produtos/promosundaes.png"  class="img_item 1">
+                            <p>3 Pig Sundaes</p>
+                        </section>
+                        <section id="openModal2" class="item 8">
+                            <img src="imagens/produtos/promo2bacon1guara.png"  class="img_item 1">
+                            <p>2 Pig Bacon e 1 Guaraná</p>
+                        </section>
+                    </section>
+                    <section class="linha 2">
+                        <section id="openModal3" class="item 9">
+                            <img src="imagens/produtos/promo4por3.png"  class="img_item 1">
+                            <p>4 Pelo Preço de 3</p>
+                        </section>
+                        <section id="openModal4" class="item 10">
+                            <img src="imagens/produtos/promofazeneguara.png"  class="img_item 1">
+                            <p>Fazendinha Mais Guaraná</p>
+                        </section>
+                    </section>
+               </section>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal1">
+        <div class="popup pu1">
+            <button class="fechar" id="closeModal1">&#10006</button>
+            <img src="imagens/produtos/promosundaes.png" alt="">
+            <div class="textopu">
+                <h1>3 Pig Sundaes</h1>
+                <p style="text-indent:2%">Compre Três Pig Sundaes por R$24,99. Apenas por tempo Limitado!</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd1" name="number" type="number" min="1" value="2">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco1"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>    
+        </div>
+    </div>
+    <div class="modal" id="modal2">
+        <div class="popup pu2">
+            <button class="fechar" id="closeModal2">&#10006</button>
+            <img src="imagens/produtos/promo2bacon1guara.png" alt="">
+            <div class="textopu">
+                <h1>2 Pig Bacon e 1 Guaraná</h1>
+                <p style="text-indent:2%">Compre dois Pig Bacon e ganhe um Guaraná Antarctica de 1 Litro!</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd2" name="number" type="number" min="1" value="2">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco2"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal3">
+        <div class="popup pu3">
+            <button class="fechar" id="closeModal3">&#10006</button>
+            <img src="imagens/produtos/promo4por3.png" alt="">
+            <div class="textopu">
+                <h1>4 Pelo Preço de 3</h1>
+                <p style="text-indent:2%">Compre três Pig Burguers e ganhe o quarto de graça.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd3" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco3"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal4">
+        <div class="popup pu4">
+            <button class="fechar" id="closeModal4">&#10006</button>
+            <img src="imagens/produtos/promofazeneguara.png" alt="">
+            <div class="textopu">
+                <h1>Fazendinha Mais Guaraná</h1>
+                <p style="text-indent:2%">Compre o mais novo Combo Fazendinha e Ganhe um Guaraná Antarctica 1 Litro para comemorar.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd4" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco4"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <footer-component></footer-component>
+    <script src="js/home.js"></script>
+    <script src="js/allpages.js"></script>
+</body>
+</html>

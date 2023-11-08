@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilocardapio.css">
+    <link rel="icon" href="imagens/icon.png" type="image/x-icon">
+    <title>Cardápio</title>
+</head>
+<body>
+    <log-component></log-component>
+    <header-component></header-component>
+    <div class="areacardapio_botoes">
+        <button class="btn1">Hambúrgueres</button>
+        <button class="btn2">Bebidas</button>
+        <button class="btn3">Sobremesas</button>
+        <button class="btn4">Combos</button>
+    </div>
+    <div class="allcardapio">
+        <div class="areacardapio_produtos">
+            <div class="areacardapio_todos">
+                <div class="cardapio cardapiohbg">
+                    <section class="areacard chbg">
+                        <h1 class="titulo_hbg">Hambúrgueres</h1>
+                        <section class="linha hbg1">
+                            <section id="openModal1" class="item item_hbg">
+                                <img src="imagens/produtos/pigburguer.png"  class="img_item">
+                                <p>Pig Burguer</p>
+                            </section>
+                            <section id="openModal2" class="item item_hbg">
+                                <img src="imagens/produtos/pigelite.png"  class="img_item">
+                                <p>Pig Elite</p>
+                            </section>
+                            <section id="openModal3" class="item item_hbg">
+                                <img src="imagens/produtos/pigbacon.png"  class="img_item">
+                                <p>Pig Bacon</p>
+                            </section>
+                            <section id="openModal4" class="item item_hbg">
+                                <img src="imagens/produtos/pigchicken.png"  class="img_item">
+                                <p>Pig Chicken</p>
+                            </section>
+                        </section>
+                        <section class="linha hbg2">
+                            <section id="openModal5" class="item item_hbg">
+                                <img src="imagens/produtos/pigsteak.png"  class="img_item">
+                                <p>Pig Steak</p>
+                            </section>
+                            <section id="openModal6" class="item item_hbg">
+                                <img src="imagens/produtos/pigegg.png"  class="img_item">
+                                <p>Pig Egg</p>
+                            </section>
+                            <section id="openModal7" class="item item_hbg">
+                                <img src="imagens/produtos/pigsalad.png"  class="img_item">
+                                <p>Pig Salad</p>
+                            </section>
+                            <section id="openModal8" class="item item_hbg">
+                                <img src="imagens/produtos/pigvegan.png"  class="img_item">
+                                <p>Pig Vegan</p>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+                <div class="cardapio cardapiobbd">
+                    <section class="areacard cbbd">
+                        <h1 class="titulo_bbd">Bebidas</h1>
+                        <section class="linha bbd1">
+                                <section id="openModal9" class="item item_bbd">
+                                    <img src="imagens/produtos/cocacolalata.png"  class="img_item">
+                                    <p>Coca Cola</p>
+                                </section>
+                                <section id="openModal10" class="item item_bbd">
+                                    <img src="imagens/produtos/guaranalata.png"  class="img_item">
+                                    <p>Guaraná Antarctica</p>
+                                </section>
+                                <section id="openModal11" class="item item_bbd">
+                                    <img src="imagens/produtos/fantalata.png"  class="img_item">
+                                    <p>Fanta Laranja</p>
+                                </section>
+                                <section id="openModal12" class="item item_bbd">
+                                    <img src="imagens/produtos/cocazerolata.png"  class="img_item">
+                                    <p>Coca Cola Zero</p>
+                                </section>
+                        </section>
+                        <section class="linha bbd2">
+                                <section id="openModal13" class="item item_bbd">
+                                    <img src="imagens/produtos/guaranaumlitro.png"  class="img_item">
+                                    <p>Guaraná Antarctica</p>
+                                </section>
+                                <section id="openModal14" class="item item_bbd">
+                                        <img src="imagens/produtos/sucolaranja.png"  class="img_item">
+                                    <p>Suco Natural One Laranja</p>
+                                </section>
+                                <section id="openModal15" class="item item_bbd">
+                                    <img src="imagens/produtos/sucouva.png"  class="img_item">
+                                    <p>Suco Natural One Uva</p>
+                                </section>
+                                <section id="openModal16" class="item item_bbd">
+                                    <img src="imagens/produtos/agua.png"  class="img_item">
+                                    <p>Água Mineral</p>
+                                </section>
+                        </section>
+                    </section>
+                </div>
+                <div class="cardapio cardapiosbm">
+                    <section class="areacard csbm">
+                        <h1 class="titulo_sbm">Sobremesas</h1>
+                        <section class="linha sbm1">
+                            <section id="openModal17" class="item item_sbm">
+                                <img src="imagens/produtos/sundaechoco.png"  class="img_item">
+                                <p>Pig Sundae Chocolate</p>
+                            </section>
+                            <section id="openModal18" class="item item_sbm">
+                                <img src="imagens/produtos/sundaemora.jpeg"  class="img_item">
+                                <p>Pig Sundae Morango</p>
+                            </section>
+                            <section id="openModal19" class="item item_sbm">
+                                <img src="imagens/produtos/sundaecaramelo.jpg"  class="img_item">
+                                <p>Pig Sundae Caramelo</p>
+                            </section>
+                        </section>
+                        <section class="linha sbm2">
+                            <section id="openModal20" class="item item_sbm">
+                                <img src="imagens/produtos/milkchoco.png"  class="img_item">
+                                <p>PigShake Chocolate</p>
+                            </section>
+                            <section id="openModal21" class="item item_sbm">
+                                <img src="imagens/produtos/milkmorango.png"  class="img_item">
+                                <p>PigShake Morango</p>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+                <div class="cardapio cardapiocmb">
+                    <section class="areacard ccmb">
+                        <h1 class="titulo_cmb">Combos</h1>
+                        <section class="linha cmb1">
+                            <section id="openModal22" class="item item_cmb">
+                                <img src="imagens/produtos/combotresporquinhos.png"  class="img_item">
+                                <p>Três Porquinhos</p>
+                            </section>
+                            <section id="openModal23" class="item item_cmb">
+                                <img src="imagens/produtos/combofazendinha.png"  class="img_item">
+                                <p>Fazendinha</p>
+                            </section>
+                        </section>
+                        <section class="linha cmb2">
+                            <section id="openModal24" class="item item_cmb">
+                                <img src="imagens/produtos/combotradicional.png"  class="img_item">
+                                <p>Tradicional</p>
+                            </section>                            
+                            <section id="openModal25" class="item item_cmb">
+                                <img src="imagens/produtos/combofamilia.png"  class="img_item">
+                                <p>Família</p>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PopUps -->
+    <div class="modal" id="modal1">
+        <div class="popup pu1">
+            <button class="fechar" id="closeModal1">&#10006</button>
+            <img src="imagens/produtos/pigburguer.png" alt="">
+            <div class="textopu">
+                <h1>Pig Burguer</h1>
+                <p style="text-indent:2%">Pão, tomate, alface, cebola, queijo, hambúrguer.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd1" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco1"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>    
+        </div>
+    </div>
+    <div class="modal" id="modal2">
+        <div class="popup pu2">
+            <button class="fechar" id="closeModal2">&#10006</button>
+            <img src="imagens/produtos/pigelite.png" alt="">
+            <div class="textopu">
+                <h1>Pig Elite</h1>
+                <p style="text-indent:2%">Pão, tomate, alface, cebola, bacon, 2 hambúgueres, queijo, ovo e molho especial.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd2" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco2"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal3">
+        <div class="popup pu3">
+            <button class="fechar" id="closeModal3">&#10006</button>
+            <img src="imagens/produtos/pigbacon.png" alt="">
+            <div class="textopu">
+                <h1>Pig Bacon</h1>
+                <p style="text-indent:2%">Pão, queijo cheddar, hambúrguer e MUITO bacon.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd3" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco3"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal4">
+        <div class="popup pu4">
+            <button class="fechar" id="closeModal4">&#10006</button>
+            <img src="imagens/produtos/pigchicken.png" alt="">
+            <div class="textopu">
+                <h1>Pig Chicken</h1>
+                <p style="text-indent:2%">Pão, tomate, alface, cebola, frango empanado e queijo.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd4" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco4"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal5">
+        <div class="popup pu5">
+            <button class="fechar" id="closeModal5">&#10006</button>
+            <img src="imagens/produtos/pigsteak.png" alt="">
+            <div class="textopu">
+                <h1>Pig Steak</h1>
+                <p style="text-indent:2%">Pão, tomate, alface, cebola, hambúrguer de carne de picanha, queijo e molho barbecue.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd5" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco5"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal6">
+        <div class="popup pu6">
+            <button class="fechar" id="closeModal6">&#10006</button>
+            <img src="imagens/produtos/pigegg.png" alt="">
+            <div class="textopu">
+                <h1>Pig Egg</h1>
+                <p style="text-indent:2%">Pão, tomate, alface, cebola, hambúrguer, ovo e queijo.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd6" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco6"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal7">
+        <div class="popup pu7">
+            <button class="fechar" id="closeModal7">&#10006</button>
+            <img src="imagens/produtos/pigsalad.png" alt="">
+            <div class="textopu">
+                <h1>Pig Salad</h1>
+                <p style="text-indent:2%">Pão, tomate, alface, cebola, picles, queijo, hambúrguer e um molho verde especial.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd7" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco7"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal8">
+        <div class="popup pu8">
+            <button class="fechar" id="closeModal8">&#10006</button>
+            <img src="imagens/produtos/pigvegan.png" alt="">
+            <div class="textopu">
+                <h1>Pig Vegan</h1>
+                <p style="text-indent:2%">Pão, hambúrguer 100% vegetal,alface,tomate,cebola e molho vegano.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd8" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco8"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal9">
+        <div class="popup pu9">
+            <button class="fechar" id="closeModal9">&#10006</button>
+            <img src="imagens/produtos/cocacolalata.png" alt="">
+            <div class="textopu">
+                <h1>Lata Coca-Cola 350mL</h1>
+                <p style="text-indent:2%">Refrescante e geladinha. Peça uma Coca-Cola para refrescar a vida.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd9" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco9"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+
+    <div class="modal" id="modal10">
+        <div class="popup pu10">
+            <button class="fechar" id="closeModal10">&#10006</button>
+            <img src="imagens/produtos/guaranalata.png" alt="">
+            <div class="textopu">
+                <h1>Lata Guaraná Anterctica 350mL</h1>
+                <p style="text-indent:2%">Refrescante e geladinha. Peça um Guaraná Antarctica para refrescar a vida.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd10" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco10"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal11">
+        <div class="popup pu11">
+            <button class="fechar" id="closeModal11">&#10006</button>
+            <img src="imagens/produtos/fantalata.png" alt="">
+            <div class="textopu">
+                <h1>Lata Fanta Laranja 350mL</h1>
+                <p style="text-indent:2%">Refrescante e geladinha. Peça uma Fanta Laranja para refrescar a vida.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd11" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco11"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal12">
+        <div class="popup pu12">
+            <button class="fechar" id="closeModal12">&#10006</button>
+            <img src="imagens/produtos/cocazerolata.png" alt="">
+            <div class="textopu">
+                <h1>Lata Coca-Cola Zero 350mL</h1>
+                <p style="text-indent:2%">Refrescante e geladinha. Peça uma Coca-Cola Zero para refrescar a vida.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd12" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco12"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal13">
+        <div class="popup pu13">
+            <button class="fechar" id="closeModal13">&#10006</button>
+            <img src="imagens/produtos/guaranaumlitro.png" alt="">
+            <div class="textopu">
+                <h1>Guaraná Antarctica 1L</h1>
+                <p style="text-indent:2%">Refrescante e geladinha. Peça uma Guaraná Antarctica para refrescar a vida.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd13" name="number" type="number" min="1" value="1">
+                </div>                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco13"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal14">
+        <div class="popup pu14">
+            <button class="fechar" id="closeModal14">&#10006</button>
+            <img src="imagens/produtos/sucolaranja.png" alt="">
+            <div class="textopu">
+                <h1>Suco Natural One Laranja 300mL</h1>
+                <p style="text-indent:2%">Se você prefere uma opção mais saudável e 100% natural, nos restaurantes Pig's Burguer você pode escolher o delicioso suco Natural One® de Laranja.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd14" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco14"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal15">
+        <div class="popup pu15">
+            <button class="fechar" id="closeModal15">&#10006</button>
+            <img src="imagens/produtos/sucouva.png" alt="">
+            <div class="textopu">
+                <h1>Suco Natural One Uva 300mL</h1>
+                <p style="text-indent:2%">Se você prefere uma opção mais saudável e 100% natural, nos restaurantes Pig's Burguer você pode escolher o delicioso suco Natural One® de Uva.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd15" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco15"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal16">
+        <div class="popup pu16">
+            <button class="fechar" id="closeModal16">&#10006</button>
+            <img src="imagens/produtos/agua.png" alt="">
+            <div class="textopu">
+                <h1>Água Mineral 500mL</h1>
+                <p style="text-indent:2%">Água Mineral Refrescante 500ml.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd16" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco16"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal17">
+        <div class="popup pu17">
+            <button class="fechar" id="closeModal17">&#10006</button>
+            <img src="imagens/produtos/sundaechoco.png" alt="">
+            <div class="textopu">
+                <h1>Pig Sundae Chocolate</h1>
+                <p style="text-indent:2%">A medida certa entre cobertura sabor chocolate e bebida láctea sabor baunilha que pode fazer você viver uma experiência explosiva, além de amendoins crocantes. Desfrute dessa combinação perfeita!</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd17" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco17"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal18">
+        <div class="popup pu18">
+            <button class="fechar" id="closeModal18">&#10006</button>
+            <img src="imagens/produtos/sundaemora.jpeg" alt="">
+            <div class="textopu">
+                <h1>Pig Sundae Morango</h1>
+                <p style="text-indent:2%">A medida certa entre cobertura de morango e bebida láctea sabor baunilha que pode fazer você viver uma experiência explosiva, além de amendoins crocantes. Desfrute dessa combinação perfeita!</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd18" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco18"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal19">
+        <div class="popup pu19">
+            <button class="fechar" id="closeModal19">&#10006</button>
+            <img src="imagens/produtos/sundaecaramelo.jpg" alt="">
+            <div class="textopu">
+                <h1>Pig Sundae Caramelo</h1>
+                <p style="text-indent:2%">A medida certa entre cobertura de caramelo e bebida láctea sabor baunilha que pode fazer você viver uma experiência explosiva, além de amendoins crocantes. Desfrute dessa combinação perfeita!</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd19" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco19"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal20">
+        <div class="popup pu20">
+            <button class="fechar" id="closeModal20">&#10006</button>
+            <img src="imagens/produtos/milkchoco.png" alt="">
+            <div class="textopu">
+                <h1>PigShake Chocolate</h1>
+                <p style="text-indent:2%">Deliciosamente cremoso. O novo PigShake Chocolate é feito com leite e batido na hora. Uma delícia!</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd20" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco20"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal21">
+        <div class="popup pu21">
+            <button class="fechar" id="closeModal21">&#10006</button>
+            <img src="imagens/produtos/milkchoco.png" alt="">
+            <div class="textopu">
+                <h1>PigShake Morango</h1>
+                <p style="text-indent:2%">Deliciosamente cremoso. O novo PigShake Morango é feito com leite e batido na hora. Uma delícia!</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd21" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco21"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal22">
+        <div class="popup pu22">
+            <button class="fechar" id="closeModal22">&#10006</button>
+            <img src="imagens/produtos/combotresporquinhos.png" alt="">
+            <div class="textopu">
+                <h1>Combo Três Porquinhos</h1>
+                <p style="text-indent:2%">O Combo Três Porquinhos oferece três pães recheados com bacon, acompanhados por um litro de refrigerante para uma diversão nostálgica com amigos.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd22" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco22"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal23">
+        <div class="popup pu23">
+            <button class="fechar" id="closeModal23">&#10006</button>
+            <img src="imagens/produtos/combofazendinha.png" alt="">
+            <div class="textopu">
+                <h1>Combo Fazendinha</h1>
+                <p style="text-indent:2%">O combo fazendinha oferece uma viagem ao interior com o Pig Steak, Pig Chicken e Pig Bacon, atendendo a diferentes preferências. Desfrute de nossas opções de pratos deliciosos!</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd23" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco23"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal24">
+        <div class="popup pu24">
+            <button class="fechar" id="closeModal24">&#10006</button>
+            <img src="imagens/produtos/combotradicional.png" alt="">
+            <div class="textopu">
+                <h1>Combo Tradicional</h1>
+                <p style="text-indent:2%">Nosso combo tradicional, composto por um Pig Steak, uma Coca-Cola e batata, é perfeito para aqueles momentos em que a fome bate derrepente, uma refeição completa e cheia de sabor.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd24" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco24"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <div class="modal" id="modal25">
+        <div class="popup pu25">
+            <button class="fechar" id="closeModal25">&#10006</button>
+            <img src="imagens/produtos/combofamilia.png" alt="">
+            <div class="textopu">
+                <h1>Combo Família</h1>
+                <p style="text-indent:2%">Perfeito para comer com a família durante o jantar de Domingo, saboreando nossos deliciosos Pig Elites e Pig Burguer.</p>
+                <label for="qtd">Quantidade:</label>
+                <div class="areaqtd">
+                    <input class="qtd" id="qtd25" name="number" type="number" min="1" value="1">
+                </div>
+                <div class="area_preco">
+                    <h2>Preço: R$</h2>
+                    <h2 class="preco" id="preco25"></h2>
+                </div>
+                <input type="submit" class="addcarrinho" value="ADICIONAR AO CARRINHO" onclick="alertaCarrinho()">
+            </div>   
+        </div>
+    </div>
+    <footer-component></footer-component>
+    <script src="js/cardapio.js"></script>
+    <script src="js/allpages.js"></script>
+</body>
+</html>

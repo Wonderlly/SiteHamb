@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloLOGIN.css">
+    <link rel="icon" href="imagens/icon.png" type="image/x-icon">
+    <title>Fazer Login</title>
+</head>
+<body>
+    <log-component></log-component>
+    <header-component></header-component>
+
+    <div id="container">
+        <div id="logBox">
+            <form action="login.php" method="POST" id="loginContainer">
+                <div class="label">
+                    <h1>Faça seu Login</h1>
+                </div>
+                <div class="label">
+                    <h2>E-mail</h2>
+                </div>
+                <div class="inputs">
+                    <input type="email" name="email" required placeholder="E-mail">
+                </div>
+                <div class="label">
+                    <h2>Senha</h2>
+                </div>
+                <div class="inputs">
+                    <input type="password" name="senha" required placeholder="Senha">
+                </div>
+                <div class="inputs">
+                    <input id="buttonCONFIRMAR" type="submit" value="Confirmar">
+                </div>
+                
+            </form>
+        </div>
+        <div id="if">
+            <h4>Ou</h4>
+        </div>
+        <div id="regBox">
+            <form action="registro.php" method="POST" id="regContainer">
+                <div class="label">
+                    <h1>Registre-se</h1>
+                </div>
+                <div class="label">
+                    <h2>Nome</h2>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="nome" required placeholder="Nome">
+                </div>
+                <div class="label">
+                    <h2>E-mail</h2>
+                </div>
+                <div class="inputs">
+                    <input type="email" name="email" required placeholder="E-mail">
+                </div>
+                <div class="label">
+                    <h2>Senha</h2>
+                </div>
+                <div class="inputs">
+                    <input type="password" name="senha" required placeholder="Senha">
+                </div>
+                <div class="inputs">
+                    <input id="buttonCONFIRMAR" type="submit" value="Confirmar">
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <img src="imagens/porcoslogin.png" class="porcoslogin" alt="">
+    <footer-component></footer-component>
+    <script src="js/allpages.js"></script>
+</body>
+</html>
