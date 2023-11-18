@@ -3,7 +3,7 @@ class Log extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <div id="login-box">
-          <div id="login"><a href="login.html">ENTRAR</a></div>
+          <div id="login"><a href="login.html">Entre ou Registre-se</a></div>
 
     </div>
     `;

@@ -92,7 +92,7 @@
 }
 
 
-@media (max-width: 912px) {
+@media (max-width: 1024px) {
     .area_contato {
         flex-direction: column;
         justify-content: center;
@@ -183,6 +183,64 @@
     .areamapa {
         height: 300px;
         width: 270px;
+        margin: 5vh;
+        border: 2px solid #3f1a14;
+        border-radius: 5vh;
+    }
+    .map {
+        width: 100%;
+        border-radius: 5vh;
+        height: 100%;
+    }
+}
+
+/*Galaxy Fold*/
+@media (max-width: 280px){
+    /*Telefone*/
+    .areacontatoTELEFONE {
+        height: 300px;
+        width: 240px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 5vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        display: flex;
+        /*justify-content: center;*/
+        align-items: center;
+        flex-direction: column;
+    }
+    .porcofone {
+        margin-right: 230px;
+        margin-top: 190px;
+        width: 100px;
+        position: absolute;
+    }
+
+    /*Mapa*/
+    .areacontatoMAPA {
+        height: 400px;
+        width: 240px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 5vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        display: flex;
+        /*justify-content: center;*/
+        align-items: center;
+        flex-direction: column;
+    }
+    .porcomapa {
+        margin-bottom: 300px;
+        margin-left: 200px;
+        margin-right: 0vh;
+        width: 70px;
+        position: absolute;
+    }
+    .areamapa {
+        height: 300px;
+        width: 220px;
         margin: 5vh;
         border: 2px solid #3f1a14;
         border-radius: 5vh;

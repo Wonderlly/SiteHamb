@@ -57,10 +57,8 @@
     justify-content: center;
     margin-top: 25px;
 }
-#buttonCONFIRMAR{
-    width: 100px;
-    height: 50px;
-}
+
+
 /*REGISTRAR*/
 #regBox{
     display: flex;
@@ -78,18 +76,25 @@
     border-radius: 50px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
-#buttonCONFIRMAR{
-    width: 100px;
-    height: 50px;
-}
 /*PORQUINHOS*/
 .porcoslogin {
     margin-top: 30px;
     width: 100%;
 }
-
+/*Confirmar*/
+#buttonCONFIRMAR{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    transition: background 1s, color 1s, border-color 1s;
+}
+#buttonCONFIRMAR:hover{
+    background: #3f1a14;
+    color: white;
+    border-color: chocolate;
+}
 /*ESTILO MOBILE*/
-@media (max-width: 912px){
+@media (max-width: 1024px){
     #container{
         display: flex;
         flex-direction: column;
