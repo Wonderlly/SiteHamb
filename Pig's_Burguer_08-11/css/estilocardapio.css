@@ -237,7 +237,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 /*ESTILO MOBILE*/
-@media (max-width: 912px){
+@media (max-width: 1024px){
     .areacardapio_botoes {
         margin-bottom: 50px;
     }
@@ -356,8 +356,8 @@ input[type=number]::-webkit-inner-spin-button {
         margin-left: 2px;
         margin-right: 2px;
         margin-bottom: 0px;
-        width: 140px;
-        height: 160px;
+        width: 200px;
+        height: 140px;
         border: 1px solid rgba(0, 0, 0, 0.2);
         box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
         border-radius: 10px;

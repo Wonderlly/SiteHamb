@@ -96,6 +96,11 @@ footer h1 {
 footer  a {
     text-decoration: none;
     color: pink;
+    transition: color 1s, font-size 1s;
+}
+footer a:hover{
+    color: #eb6a56;
+    font-size: 24px;
 }
 footer h2 {
     margin-top: 0;
@@ -116,7 +121,7 @@ ul a {
     text-decoration: none;
     text-transform: uppercase;
     color: white; 
-    transition: transform 2s;
+    transition: font-size 1s;
 }
 /*Fim Footer*/
 
@@ -134,7 +139,7 @@ ul a {
     .logo {
         width: 90px;
         height: 120px;
-        margin-top: 10px;
+        margin-top: 33px;
         position: relative;
     }
     .texto{
@@ -166,7 +171,7 @@ ul a {
         height: 60px;
         color: white;
         font-family: BebasNeue;
-        font-size: 30px;
+        font-size: 24px;
         cursor: pointer;
         border-bottom-left-radius: 10px;
     }
@@ -201,4 +206,31 @@ ul a {
         color: white;
     }
     /*Fim Footer*/
+}
+
+
+/*Galaxy Fold*/
+@media (max-width: 280px){
+    #login-box{
+        display: flex;
+        right: 0px;
+        justify-content: center;
+        position: absolute;
+        height: 60px;
+        color: white;
+        font-family: BebasNeue;
+        font-size: 20px;
+        cursor: pointer;
+        border-bottom-left-radius: 10px;
+    }
+    .texto{
+        font-family: BebasNeue;
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: 23px;
+        text-decoration: none;
+        border-radius: 10px;
+        top: 12%;
+    }
 }
